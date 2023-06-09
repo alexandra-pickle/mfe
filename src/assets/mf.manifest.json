@@ -1,4 +1,14 @@
 {
-  "mfe1": "http://localhost:4201/remoteEntry.js",
-  "mfe2": "http://localhost:4202/remoteEntry.js"
+  "mfe1": {
+    "remoteEntry": "http://localhost:4201/remoteEntry.js",
+    "exposedModule": "./Module",
+    "displayName": "MFE1",
+    "routePath": "test1"
+  },
+  "mfe2": {
+    "remoteEntry": " http://localhost:4202/remoteEntry.js",
+    "exposedModule": "./Module",
+    "displayName": "MFE2",
+    "routePath": "test2"
+  }
 }

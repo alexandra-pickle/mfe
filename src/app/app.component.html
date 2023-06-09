@@ -1,4 +1,11 @@
 <div class="shell">
   <h1>Shell</h1>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+
+    <li *ngFor="let remote of remotes">
+      <a [routerLink]="remote.routePath">{{ remote.displayName }}</a>
+    </li>
+  </ul>
   <router-outlet></router-outlet>
 </div>

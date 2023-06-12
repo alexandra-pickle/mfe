@@ -8,25 +8,6 @@ export const routes: Routes = [
     redirectTo: '',
     pathMatch: 'full',
   },
-
-  {
-    path: 'test1',
-    loadChildren: () =>
-      loadRemoteModule({
-        type: 'manifest',
-        remoteName: 'mfe1',
-        exposedModule: './Module',
-      }).then((m) => m.Mfe1Module),
-  },
-  {
-    path: 'test2',
-    loadChildren: () =>
-      loadRemoteModule({
-        type: 'manifest',
-        remoteName: 'mfe2',
-        exposedModule: './Module',
-      }).then((m) => m.Mfe2Module),
-  },
 ];
 
 @NgModule({

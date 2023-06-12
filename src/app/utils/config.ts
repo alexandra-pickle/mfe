@@ -5,6 +5,7 @@ export type CustomRemoteCongif = RemoteConfig & {
   displayName: string;
   routePath: string;
   ngModuleName: string;
+  isOverride?: boolean;
 };
 
 export type CustomManifest = Manifest<CustomRemoteCongif>;
